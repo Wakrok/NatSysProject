@@ -211,7 +211,8 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 
 7. Run the command **ls -asl** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/7eaad579-5402-48f4-a227-9705a0804ae5)
 
-8. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+8. Run the command **free -h** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/d6336693-cc00-4baf-a548-e58d1a9842d4)
+
 9. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
 10. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
 11. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
