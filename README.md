@@ -312,10 +312,18 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6128.3 avail Mem
    1241 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh  
 ```
 
-11. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-12. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-13. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-14. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
+11. Run the command **uname -a**. ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/78e15b1b-68cf-4037-a426-c1c54bb8ba77)
+
+12. What is the available free memory in the system. ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/c06b6e2e-bcd3-4bda-98d0-441fdb0313b4)
+``free= 235Mi   available = 6.0Gi```
+13. What is the available disk space mounted on /workspace. ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/4712d1a2-0ac4-4a5d-b45a-21e999594f88)
+```20G```
+14. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/3adb9fd2-e830-4f25-87e5-742955413920)
+
+``` Version: 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024
+Hardware architecture: x86_64
+```
+
 15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
 16. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
 17. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
