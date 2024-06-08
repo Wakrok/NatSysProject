@@ -78,7 +78,8 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 1. Run the command **pwd** . ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/5e66c53c-d2b7-4ef8-a108-7465df46a384)
 
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-   ```
+
+    ```
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -105,9 +106,12 @@ messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
    ```
-4. Run the command **df** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/b6f6b79a-e87a-4b4b-99ef-0cda254b7aa3)
+
+4. Run the command **df** . ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/930226e1-51d1-428b-87a6-09ae90a8f457)
+
 
 5. Run the command **du** . ***(1 mark)***
+
 ```
  1972    ./images
 8       ./.git/info
