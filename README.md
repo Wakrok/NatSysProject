@@ -55,9 +55,10 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Ubuntu
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***  Option 1: 2 vCPUs, 4 GB RAM, 32 GB disk
+Option 2: 4 vCPUs, 8 GB RAM, 64 GB disk
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** Committing and syncing current work on source control ensures that changes are saved, tracked, and shared with the team, facilitating collaboration, version control, and backup of the code.
 
 ## Exploring the Terminal
 
@@ -74,7 +75,8 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/5e66c53c-d2b7-4ef8-a108-7465df46a384)
+
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
 3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
 4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
