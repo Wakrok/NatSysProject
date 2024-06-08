@@ -322,7 +322,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6128.3 avail Mem
 
 ``` Hardware architecture: x86_64
  Version: 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024
-
+Hardware architecture: x86_64
 ```
 
 15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
