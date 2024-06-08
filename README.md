@@ -213,7 +213,9 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 
 8. Run the command **free -h** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/d6336693-cc00-4baf-a548-e58d1a9842d4)
 
-9. Run the command **cat /proc/cpuinfo** . ***(1 mark)***   ```
+9. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+
+    ```
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -270,7 +272,9 @@ cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
 ```
+
 10. Run the command **top** and type **q** to quit. ***(1 mark)***
+
 ```
 processor       : 1
 vendor_id       : AuthenticAMD
@@ -307,6 +311,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6128.3 avail Mem
      49 root      20   0   12196   3484   2560 S   0.0   0.0   0:00.00 sshd                                                                                    
    1241 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh  
 ```
+
 11. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
 12. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
 13. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
