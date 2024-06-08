@@ -320,7 +320,9 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6128.3 avail Mem
 ```20G```
 14. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/3adb9fd2-e830-4f25-87e5-742955413920)
 
-``` Version: 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 , Hardware architecture: x86_64
+``` Hardware architecture: x86_64
+ Version: 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024
+
 ```
 
 15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
