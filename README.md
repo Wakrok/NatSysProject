@@ -113,7 +113,7 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 
 5. Run the command **du** . ***(1 mark)***
 
-```
+\```
  1972    ./images
 8       ./.git/info
 4       ./.git/branches
@@ -205,7 +205,7 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 68      ./.git/hooks
 2684    ./.git
 4676    .
-```
+\```
 6. Run the command **ls** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/f0bf3cd1-0ff3-4b16-97fa-aed6973bf2fb)
 
 7. Run the command **ls -asl** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/7eaad579-5402-48f4-a227-9705a0804ae5)
