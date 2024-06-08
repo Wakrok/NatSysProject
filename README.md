@@ -78,21 +78,144 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 1. Run the command **pwd** . ***(1 mark)***  ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/5e66c53c-d2b7-4ef8-a108-7465df46a384)
 
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+   ```
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+   ```
+4. Run the command **df** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/b6f6b79a-e87a-4b4b-99ef-0cda254b7aa3)
+
+5. Run the command **du** . ***(1 mark)***
+```
+ 1972    ./images
+8       ./.git/info
+4       ./.git/branches
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/refs/heads
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+4       ./.git/refs/tags
+32      ./.git/refs
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+8       ./.git/objects/c3
+8       ./.git/objects/0d
+4       ./.git/objects/info
+8       ./.git/objects/fe
+8       ./.git/objects/83
+8       ./.git/objects/86
+8       ./.git/objects/b2
+8       ./.git/objects/24
+12      ./.git/objects/b5
+12      ./.git/objects/1c
+12      ./.git/objects/70
+12      ./.git/objects/14
+8       ./.git/objects/58
+8       ./.git/objects/a3
+8       ./.git/objects/47
+8       ./.git/objects/93
+12      ./.git/objects/73
+8       ./.git/objects/cd
+12      ./.git/objects/a1
+8       ./.git/objects/e7
+8       ./.git/objects/74
+12      ./.git/objects/3d
+8       ./.git/objects/f6
+8       ./.git/objects/cb
+12      ./.git/objects/6e
+8       ./.git/objects/0b
+8       ./.git/objects/04
+8       ./.git/objects/91
+8       ./.git/objects/4a
+12      ./.git/objects/d2
+8       ./.git/objects/e9
+12      ./.git/objects/72
+8       ./.git/objects/b9
+12      ./.git/objects/62
+8       ./.git/objects/fa
+12      ./.git/objects/af
+8       ./.git/objects/b6
+12      ./.git/objects/44
+8       ./.git/objects/52
+8       ./.git/objects/1b
+12      ./.git/objects/00
+12      ./.git/objects/64
+12      ./.git/objects/17
+8       ./.git/objects/a6
+8       ./.git/objects/7b
+8       ./.git/objects/eb
+8       ./.git/objects/3f
+16      ./.git/objects/fb
+8       ./.git/objects/81
+8       ./.git/objects/60
+8       ./.git/objects/ab
+8       ./.git/objects/71
+16      ./.git/objects/4f
+12      ./.git/objects/f0
+8       ./.git/objects/5b
+8       ./.git/objects/53
+12      ./.git/objects/2e
+8       ./.git/objects/41
+1824    ./.git/objects/pack
+8       ./.git/objects/49
+8       ./.git/objects/c6
+8       ./.git/objects/4b
+8       ./.git/objects/20
+8       ./.git/objects/d8
+8       ./.git/objects/3a
+8       ./.git/objects/f9
+8       ./.git/objects/96
+8       ./.git/objects/f2
+12      ./.git/objects/fd
+8       ./.git/objects/fc
+12      ./.git/objects/ff
+12      ./.git/objects/e5
+2492    ./.git/objects
+68      ./.git/hooks
+2684    ./.git
+4676    .
+```
+6. Run the command **ls** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/f0bf3cd1-0ff3-4b16-97fa-aed6973bf2fb)
+
+7. Run the command **ls -asl** . ***(1 mark)*** ![image](https://github.com/Wakrok/NatSysProject/assets/172091310/7eaad579-5402-48f4-a227-9705a0804ae5)
+
+8. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+9. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
+10. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
+11. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
+12. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
+13. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+14. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
+15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
+16. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+17. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+18. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
 
 ## Running your own container instance.
 
