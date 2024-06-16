@@ -5,7 +5,7 @@ Group Name: __Fill your team name__.
 Team Mates:
 1. Mohamad Danish Raimi bin Mohamad Rais and 2212671
 2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+3. Ahmad Syameer Syafiq bin Zulkefli and 2121797
 
 ## Rules
 1. You are allowed to have **3 group** members.
