@@ -444,18 +444,22 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
 
 ![permission folder](https://github.com/Wakrok/NatSysProject/assets/172114212/71455a41-8938-441e-afab-0739ef609ef2)
-Permission: drwxr-xr-x
-User: Root
-group: Root
+
+- Permission: drwxr-xr-x
+
+- User: Root
+
+- group: Root
 
 2. What port is the apache web server running. ***(1 mark)***
 
-80
+ -80
 
 3. What port is open for http protocol on the host machine? ***(1 mark)***
 
 ![Port running](https://github.com/Wakrok/NatSysProject/assets/172114212/c1d29bfe-6115-48e5-b53d-a8d64d89c4b7)
- 0.0.0.0:8080->80/tcp
+
+ -0.0.0.0:8080->80/tcp
 
 ## Create SUB Networks
 
@@ -476,8 +480,8 @@ docker run -itd --net rednet --name c2 busybox sh
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
 
-a lightweight and versatile Unix-like operating system that combines several common Unix utilities into a single executable
-a general command-line switch used in various contexts,typically used to assign a name or identifier to an object, such as a Docker container.
+- a lightweight and versatile Unix-like operating system that combines several common Unix utilities into a single executable
+- a general command-line switch used in various contexts,typically used to assign a name or identifier to an object, such as a Docker container.
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
 
@@ -486,17 +490,24 @@ a general command-line switch used in various contexts,typically used to assign 
 
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
 
-bluenet: 178.18.0.1
-rednet: 172.19.0.1
+![inspect c1](https://github.com/Wakrok/NatSysProject/assets/172114212/4721f5d9-0825-46f8-ad65-8dfbe63e61c5)
+
+- bluenet: 172.20.0.1
+
+![inspect c2](https://github.com/Wakrok/NatSysProject/assets/172114212/ddb8a3ed-8260-4cab-a42a-b43a5bd13574)
+
+- rednet: 172.19.0.1
 
 4. What is the network address for the running container c1 and c2.
 
-bluenet: 172.18.0.2
-rednet: 172.19.0.2
+- bluenet: 172.20.0.3
+
+- rednet: 172.19.0.2
 
 5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
 
-no
+- no
+
 ![SUBNQ5](https://github.com/Wakrok/NatSysProject/assets/172114212/5cad2055-3f8f-4a5f-856e-dad14d34c6e1)
 
 ## Bridging two SUB Networks
@@ -507,7 +518,8 @@ docker network connect bridgenet c1
 docker network connect bridgenet c2
 docker exec c1 ping c2
 ```
-![bridgeSUBN](https://github.com/Wakrok/NatSysProject/assets/172114212/4725e3a1-9d53-4aa2-8626-2dcb005ed665)
+
+![bridge subn](https://github.com/Wakrok/NatSysProject/assets/172114212/93d0df3b-08df-4af4-8221-8867d87a99f3)
 
 
 ## What to submit
