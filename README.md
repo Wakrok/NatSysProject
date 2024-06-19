@@ -325,10 +325,13 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6128.3 avail Mem
 Hardware architecture: x86_64
 ```
 
-15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-16. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-18. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+15. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** ``` ls: Lists the contents of a directory. By default, it shows the names of files and directories in the current directory in a simple, column-wise format. For ls -asl, the -asl combination of options modifies the behavior of the ls command. -a (all) includes hidden files (those starting with a dot .). -s (size) prints the allocated size of each file in blocks. -l (long format) provides detailed information about each file, including file type, permissions, number of hard links, owner, group, size, and timestamp. Combined Effects of -asl, all Files both visible and hidden files are listed. The size of each file in blocks is displayed. A detailed listing format is used. ```
+16. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/ea56f0fb-aa41-415c-83ab-b7ae70aa18a5)
+17. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/c62e043f-e9e4-48d1-be1e-e0c9aa633c7d)
+18. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/f237600e-6870-4a57-9c1a-72b0888d3b29)
 
 ## Running your own container instance.
 
@@ -337,13 +340,14 @@ Hardware architecture: x86_64
 docker pull debian
 docker run --detach -it debian
 ```
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/69d5ba89-6619-4a68-9f6d-5fce07ca6c5a)
 2. This will run the debian container. To check if the debian container is running, type
 ```bash
 @joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
 f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
 ```
-
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/69db8b6c-9f89-4f6b-86f5-659dec502971)
 3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
 ```bash
 docker exec -i -t romantic_jackson /bin/bash
@@ -362,7 +366,7 @@ root@f65be1987f84:~# nano helloworld.txt
 ```
 
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
-
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/de54553e-1668-4c29-a739-9449f4cf1c43)
 6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
 ```bash 
 @joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
@@ -373,7 +377,7 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
 ```
-
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/d95b6b34-b5ae-42d0-8212-db7ef837dc89)
 7. Stop the container and delete the container. What happened to your helloworld.txt?
 
 ```bash 
@@ -385,11 +389,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
 ```
-
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/0efa5f6f-8abe-4afa-9fa3-79b790b0bfed)
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***    ```The persistence of files in a container depends on how the container's storage is configured. By default, container storage is typically ephemeral, meaning that any data written inside the container is lost when the container is stopped or removed.```
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** ```Yes, you can run multiple instances of Debian Linux on a single machine```
 
 ## Running your own container with persistent storage
 
@@ -405,17 +409,18 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 @joeynor ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
 ```
-
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/4f068e9d-b7e5-40ca-8db3-f5bbead0d7c1)
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+![image](https://github.com/Wakrok/NatSysProject/assets/172030228/f91fadcb-65c2-4c3f-b2e2-07d172d29dd4)
 
 ## You are on your own, create your own static webpage
 
