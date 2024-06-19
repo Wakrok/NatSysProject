@@ -4,7 +4,7 @@ Group Name: __Fill your team name__.
 
 Team Mates:
 1. Mohamad Danish Raimi bin Mohamad Rais and 2212671
-2. __Fill name__ and __matric no__
+2. Muhammad Hariz bin Mohd Apandi and 2216455
 3. Ahmad Syameer Syafiq bin Zulkefli and 2121797
 
 ## Rules
